@@ -18,6 +18,7 @@ public interface UserMapper {
     @Select("select * from user where email= #{email}")
     User selectByEmail(String email);
 
+    @Insert("insert into user(username,password,salt,email,type,status,activationCode,headerUrl,createTime) values(#{username},#{password},#{salt},#{email},#{type},#{status},#{activation_code},#{avatar_url},#{create_time})")
     int insertUser(User user);
 
     @Update("update user set password=#{password} where id=#{id}")

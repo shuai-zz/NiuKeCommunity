@@ -19,7 +19,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Map;@Controller
+import java.util.Map;
+@Controller
 @RequestMapping("/user")
 @RequiredArgsConstructor
 public class UserController {
