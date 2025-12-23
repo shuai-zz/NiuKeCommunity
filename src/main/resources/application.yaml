@@ -25,3 +25,14 @@ spring:
         nowcoder:
           community:
             controller: debug
+  mail:
+    host: smtp.qq.com
+    port: 456
+    username: nowcoder@qq.com
+    password: nowcoder123
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
