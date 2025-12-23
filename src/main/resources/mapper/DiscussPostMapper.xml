@@ -12,7 +12,6 @@
             and user_id=#{userId}
         </if>
         order by type desc, create_time desc
-        limit #{offset}, #{limit}
     </select>
     <select id="selectDiscussPostRows" resultType="java.lang.Integer">
         select count(id)
@@ -22,6 +21,5 @@
             and user_id=#{userId}
         </if>
         order by type desc, create_time desc
-        limit #{offset}, #{limit}
     </select>
 </mapper>
